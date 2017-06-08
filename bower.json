@@ -1,0 +1,29 @@
+{
+  "name": "sonardigitall",
+  "homepage": "https://github.com/vanduirf/sonardigitall",
+  "authors": [
+    "Vanduir F <vanduir.fockink@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "bootstrap-sass": "^3.3.7",
+    "breakpoint-sass": "^2.7.1",
+    "sass-flex-mixin": "^1.0.3",
+    "flexslider": "^2.6.3"
+  },
+  "devDependencies": {
+    "flexslider": "^2.6.3"
+  }
+}

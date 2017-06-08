@@ -1,0 +1,328 @@
+//Classes gerais---------------------------------------------------//
+
+body
+	overflow-x: hidden
+	font-family: 'Open Sans', sans-serif
+
+.text-muted
+	color: #777777
+
+.text-primary
+	color: #314f6f
+
+p 
+	font-size: 14px
+	line-height: 1.75
+	.large
+		font-size: 16px
+
+a, a:hover, a:focus, a:active, a.active
+	outline: none
+//	text-transform: uppercase
+
+a
+	color: #314f6f
+
+h1, h2, h3, h4, h5, h6
+	font-family: 'Open Sans', sans-serif
+	text-transform: uppercase
+	font-weight: 700
+
+.img-centered
+	margin: 0 auto
+
+.bg-light-gray
+	background-color: #eeeeee
+
+.bg-darkest-gray
+	background-color: #222222
+
+.btn-primary 
+  color: white
+  background-color: #314f6f
+  border-color: #314f6f
+  font-family: 'Open Sans', sans-serif
+  text-transform: uppercase
+  font-weight: 700
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary
+  color: white;
+  background-color: #314f6f
+  border-color: #314f6f
+
+
+.btn-xl
+	color: white
+	background-color: transparent
+	border-color: #fcef03
+	font-weight: 700
+	border-radius: 3px
+	font-size: 18px
+	padding: 10px 20px
+	&:hover, &:focus, &:active, &.active, .open .dropdown-toggle.btn-xl
+		color: black
+		background-color: #fcef03
+
+
+//Classe nav
+.navbar-brand
+		background-image: url('../images/logo-header.png')
+		height: 90px
+		width: 161px
+		background-repeat: no-repeat
+		margin-top: 25px
+
+.navbar-custom
+	background-color: transparent
+	border: none
+	height: 120px
+	.navbar-collapse
+		border-color: rgba(255, 255, 255, 0.02)
+	.navbar-toggle
+		background-color: #314f6f
+		border-color: #314f6f
+		text-transform: uppercase
+		color: white
+		&:hover, &:focus
+			background-color: #fcef03
+			color: black
+	.nav 
+		li 
+			a 
+				font-weight: 400
+				text-transform: uppercase
+				letter-spacing: 1px
+				color: white
+				&:hover, &:focus
+					color: #fcef03
+					outline: none				
+	.navbar-nav >
+		.active >
+			a
+				border-radius: 0
+				color: white
+				background-color: #fcef03
+				color: black
+				&:hover, &:focus
+					color: black
+					background-color: #ead906
+
+
+@media (min-width: 768px)
+	.navbar-custom
+		background-color: transparent
+		-webkit-transition: padding 0.3s
+    	-moz-transition: padding 0.3s
+    	transition: padding 0.3s
+    	border: none
+		.navbar-nav >
+	   		.active >
+	   			a 
+	   				border-radius: 3px	   				
+	   		.navbar-brand
+	   			margin-left: 0px
+	.nav 
+		li 
+			a 
+				margin-top: 35px
+				margin-right: 5px
+
+@media (min-width: 768px)
+	.navbar-custom.affix
+		background-color: #314f6f
+		height: 60px
+		.navbar-brand
+			background-image: url('../images/logo-header-mobile.png')
+			margin-top: 5px
+		.nav 
+			li 
+				a 
+					font-weight: 100
+					margin-top: 5px
+
+@media (max-width: 767px)
+	.navbar-custom
+		background-color: #314f6f
+		border: none
+		height: 60px
+		.affix
+			background-color: #314f6f
+			height: 60px
+		.navbar-collapse
+			background-color: #314f6f
+		.navbar-brand
+			height: 55px
+
+@media (max-width: 400px)
+	header
+		display: none
+
+@media only screen and (max-width: 767px)
+	.navbar-custom
+		.navbar-brand
+			background-image: url('../images/logo-header-mobile.png')
+			margin-top: 5px
+			margin-right: 5px
+	.btn-xl
+		font-size: 10px
+		padding: 5px 10px
+
+@media (max-width: 992px)
+	.ken_burns_effect_carousel_caption
+		h1
+			font-size: 40px
+section 
+	padding: 50px 0
+	.section-heading
+		font-size: 40px
+		margin-top: 15px
+		margin-bottom: 15px
+	.section-subheading
+		font-size: 16px
+		font-family: 'Roboto', sans-serif
+		text-transform: none
+		font-style: italic
+		margin-bottom: 75px
+
+@media (min-width: 768px)
+	section
+		padding: 150px 0
+
+section
+	.service-heading
+		margin: 15px 0
+		text-transform: none
+
+#contato
+	background-color: #021c33
+	background-image: url('../images/logo-contato.png')
+	background-position: center
+	background-repeat: no-repeat
+	.section-heading
+		color: white
+	.form-group
+		margin-bottom: 25px
+		& input
+			height: auto
+		& textarea
+			height: 236px
+		& input, & textarea
+			padding: 20px		
+	.form-control
+		&:focus
+			border-color: #fcef03
+			box-shadow: none
+	.text-danger
+		color: #e74c3c
+
+ul, li 
+	padding: 0
+	margin: 0
+
+li 
+	list-style-type: none
+
+footer
+	background-color: #0c1a1e
+	min-height: 350px
+	font-family: 'Open Sans', sans-serif
+
+.footer-col
+	margin-top: 50px
+.logofooter
+	margin-bottom: 10px
+	font-size: 25px
+	color: #fff
+	font-weight: 700
+
+.footer-col
+	p 
+		color: #fff
+		font-size: 12px 
+		font-family: 'Open Sans', sans-serif
+		margin-bottom: 15px
+		i 
+			width: 20px
+			color: #999
+
+.footer-ul
+	list-style-type: none
+	padding-left: 0
+	margin-left: 2px
+	li 
+		line-height: 29px
+		font-size: 12px
+		a 
+			color: #a0a3a4
+			transition: color 0.2s linear 0s, background 0.2s linear 0s
+	i 
+		margin-right: 10px
+	li 
+		a 
+			&:hover
+				color: #fcef03
+				transition: color 0.2s linear 0s, background 0.2s linear 0s
+				
+
+.copyright
+	min-height: 40px
+	background-color: #000000
+	p 
+		text-align: left
+		color: #fff
+		padding: 10px 0
+		margin-bottom: 0
+.heading7
+	font-size: 21px
+	font-weight: 700
+	color: #d9d6d6
+	margin-bottom: 22px
+.post 
+	p 
+		font-size: 12px
+		color: #fff
+		line-height: 20px
+		span 
+			display: block
+			color: #8f8f8f
+.bottom_ul
+	list-style-type: none
+	float: right
+	margin-bottom: 0
+	li 
+		float: left
+		line-height: 40px
+		&:after
+			content: "/"
+			color: #fff
+			margin-right: 8px
+			margin-left: 8px
+		a 
+			color: #fff
+			font-size: 12px
+.social-icon
+	width: 30px 
+	height: 30px
+	font-size: 15px
+	background-color: blue
+	color: #fff
+	text-align: center
+	margin-right: 10px
+	padding-top: 7px 
+	border-radius: 50%
+.footer-social
+	li 
+		float: left
+.linked-in
+	background-color: #007bb6
+.facebook
+	background-color: #3b5998
+.twitter
+	background-color: #1da1f2
+.google
+	background-color: #f63e28
+
+		
+
+
+

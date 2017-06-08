@@ -1,0 +1,553 @@
+/*
+	StyleSheet For Responsive Bootstrap Carousel
+
+	Item Name: Responsive Bootstrap Carousel
+	Item URL: 
+	Description: Different Types of Bootstrap Carousel
+	Author: SZThemes
+	Author URI: http://codecanyon.net/user/sz_themes
+	Version: 1.0
+
+
+								Content List
+  -----------------------------------------------------------------------------------
+
+	NAME ----------------------------------------LINE NUMBER--------------------- #
+
+	KEN BURNS EFFECT CAROUSEL -------------------54------------------------------ 01
+
+	RESPONSIVE ----------------------------------338----------------------------- 02	
+
+	COLORS --------------------------------------468----------------------------- 03
+
+
+	[ Note: Line Numbers Are According To Notepad++ ]
+
+
+  ------------------------------------------------------------------
+
+
+							Fonts Styles
+  ------------------------------------------------------------------
+
+	  'Raleway', sans-serif ---------------------------------- 01
+	            FontAwesome ---------------------------------- 02
+
+  ------------------------------------------------------------------
+
+
+							Color Codes
+  ------------------------------------------------------------------
+
+	NAME    ------------------------RGB-------------------------- #
+
+	#ffffff -------------------rgb(255, 255, 255)---------------- 01
+	#000000 -------------------rgb(0, 0, 0)---------------------- 02
+	#bf392b -------------------rgb(191, 57, 43)------------------ 03 Replace This Color To Change Whole Color Scheme
+
+	
+*/
+
+
+/*==========================================================================================================================================
+
+													KEN BURNS EFFECT CAROUSEL
+
+==========================================================================================================================================*/
+
+/*========== LEFT/RIGHT CONTROL ==========*/
+
+.ken_burns_effect_carousel_control_left,
+.ken_burns_effect_carousel_control_right {
+
+	top: 50%;
+	z-index: 2;
+	opacity: 0;
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	
+	-webkit-border-radius: 100%; /* Chrome, Safari, Opera */
+			border-radius: 100%; /* Standard syntax */
+			
+	-webkit-transition: all ease-in-out 0.3s; /* Chrome, Safari, Opera */
+            transition: all ease-in-out 0.3s; /* Standard syntax */
+
+}
+
+.ken_burns_effect_carousel_wrapper:hover .ken_burns_effect_carousel_control_left,
+.ken_burns_effect_carousel_wrapper:hover .ken_burns_effect_carousel_control_right {
+
+	opacity: 0.8;
+
+}
+
+.ken_burns_effect_carousel_icons {
+
+	line-height: 50px;
+	font-size: 34px !important;
+	font-weight: normal !important;
+
+}
+
+.ken_burns_effect_carousel_control_left {
+
+	left: 1% !important;
+
+}
+
+.ken_burns_effect_carousel_control_right {
+
+	right: 1% !important;
+
+}
+
+/*========== ELASTIC EFFECT ==========*/
+
+.ken_burns_effect_carousel_elastic {
+
+	opacity: 1;
+
+	-webkit-transform: scale3d(1,1,1); /* Chrome, Safari, Opera */
+			transform: scale3d(1,1,1); /* Standard syntax */
+
+}
+
+.ken_burns_effect_carousel_elastic .item {
+
+	top: 0;
+	z-index: 1;
+	opacity: 0;
+	width: 100%;
+	position: absolute;
+	left: 0 !important;
+	display: block !important;
+
+	-webkit-transform: scale3d(2,1,2); /* Chrome, Safari, Opera */
+			transform: scale3d(2,1,2); /* Standard syntax */
+
+	-webkit-transition: -webkit-transform 0.7s ease-in-out 0s, opacity ease-in-out 0.7s; /* Chrome, Safari, Opera */
+            transition: 		transform 0.7s ease-in-out 0s, opacity ease-in-out 0.7s; /* Standard syntax */
+
+}
+
+.ken_burns_effect_carousel_elastic .item:first-child {
+
+	top: auto;
+	position: relative;
+
+}
+
+.ken_burns_effect_carousel_elastic .item.active {
+
+	opacity: 1;
+	z-index: 2;
+
+	-webkit-transform: scale3d(1,1,1); /* Chrome, Safari, Opera */
+			transform: scale3d(1,1,1); /* Standard syntax */
+
+	-webkit-transition: -webkit-transform 0.7s ease-in-out 0s, opacity ease-in-out 0.7s; /* Chrome, Safari, Opera */
+            transition: 		transform 0.7s ease-in-out 0s, opacity ease-in-out 0.7s; /* Standard syntax */
+
+}
+
+/*========== KEN BURNS EFFECT ==========*/
+
+.ken_burns_effect_carousel_wrapper {
+
+	overflow: hidden;
+	max-height: 650px;
+
+}
+
+.ken_burns_effect_carousel_wrapper > .carousel-inner  > .item > img,
+.ken_burns_effect_carousel_wrapper > .carousel-inner > .item > a > img {
+
+	margin: auto;
+	opacity: 0.8;
+	width: 100% !important;
+
+    -webkit-transform-origin: 100% 0%;
+       -moz-transform-origin: 100% 0%;
+        -ms-transform-origin: 100% 0%;
+         -o-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+
+    -webkit-animation: immortalkenburns 20000ms linear 0s infinite alternate; /* Chrome, Safari, Opera */
+            animation: immortalkenburns 20000ms linear 0s infinite alternate; /* Standard syntax */
+
+}
+
+/*========== ANIMATION ==========*/
+
+@-webkit-keyframes immortalkenburns {
+  
+    0% {
+
+    -webkit-transform: scale(1); /* Chrome, Safari, Opera */
+
+    -webkit-transition: -webkit-transform 20000ms linear 0s; /* Chrome, Safari, Opera */
+	
+    }
+
+    100% {
+
+    -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+	
+	-webkit-transition: -webkit-transform 20000ms linear 0s; /* Chrome, Safari, Opera */
+
+    }
+
+}
+
+@-moz-keyframes immortalkenburns {
+
+    0% {
+
+    -moz-transform: scale(1); /* Mozilla */
+
+    -moz-transition: -moz-transform 20000ms linear 0s; /* Mozilla */
+
+    }
+
+    100% {
+	
+    -moz-transform: scale(1.2); /* Mozilla */
+	
+	-moz-transition: -moz-transform 20000ms linear 0s; /* Mozilla */
+
+    }
+
+}
+
+@-ms-keyframes immortalkenburns {
+  
+    0% {
+
+    -ms-transform: scale(1); /* IE 9 */
+
+    -ms-transition: -ms-transform 20000ms linear 0s; /* IE 9 */
+
+    }
+
+    100% {
+
+    -ms-transform: scale(1.2); /* IE 9 */
+	
+	-ms-transition: -ms-transform 20000ms linear 0s; /* IE 9 */
+		
+    }
+
+}
+
+@-o-keyframes immortalkenburns {
+  
+    0% {
+
+    -o-transform: scale(1); /* Opera */
+
+    -o-transition: -o-transform 20000ms linear 0s; /* Opera */
+
+    }
+
+    100% {
+
+    -o-transform: scale(1.2); /* Opera */
+	
+	-o-transition: -o-transform 20000ms linear 0s; /* Opera */
+		
+    }
+
+}
+
+@keyframes immortalkenburns {
+  
+    0% {
+
+    transform: scale(1); /* Standard syntax */
+
+    transition: transform 20000ms linear 0s; /* Standard syntax */
+
+    }
+
+    100% {
+	
+    transform: scale(1.2); /* Standard syntax */
+	
+	transition: transform 20000ms linear 0s; /* Standard syntax */
+
+    }
+
+}
+
+/*========== CAPTION ==========*/
+
+.ken_burns_effect_carousel_caption {
+
+	
+/*	width: 60%;*/
+	bottom: 15%;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.ken_burns_effect_carousel_caption_right {
+
+	left: 50%;
+
+}
+
+.ken_burns_effect_carousel_caption_center {
+
+	float: none;
+	margin: auto;
+
+}
+
+.ken_burns_effect_carousel_caption h1 {
+
+	
+	font-size: 75px;
+	font-weight: 300;
+	text-shadow: none;
+	padding: 5px 0px 5px 15px;
+	
+	-webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+            animation-delay: 1s; /* Standard syntax */
+
+}
+
+
+
+.ken_burns_effect_carousel_caption h2 {
+
+	font-size: 35px;
+	text-shadow: none;
+	/*padding-left: 15px;*/
+	font-weight: normal;
+	padding-bottom: 50px;
+	
+	-webkit-animation-delay: 1.5s; /* Chrome, Safari, Opera */
+            animation-delay: 1.5s; /* Standard syntax */
+
+}
+
+
+/*==========================================================================================================================================
+
+															RESPONSIVE
+
+==========================================================================================================================================*/
+
+
+/*==================================================  MEDIA 480px  ==================================================*/
+
+
+@media only screen and (max-width: 480px) {
+
+	/*========== LEFT/RIGHT CONTROL ==========*/
+
+	.ken_burns_effect_carousel_control_left,
+	.ken_burns_effect_carousel_control_right {
+
+		border: none;
+
+	}
+
+	.ken_burns_effect_carousel_icons {
+
+		font-size: 18px !important;
+
+	}
+
+	/*========== CAPTION ==========*/
+
+	.ken_burns_effect_carousel_caption {
+
+		left: 0%;
+		width: 100%;
+		bottom: 25%;
+		text-align: center;
+
+	}
+	
+	.ken_burns_effect_carousel_caption h1 {
+
+		font-size: 25px;
+
+	}
+	
+	.ken_burns_effect_carousel_caption h2 {
+
+		font-size: 20px;
+
+	}
+
+}
+
+
+/*==================================================  MEDIA 481px - 600px  ==================================================*/
+
+
+@media (min-width: 481px) and (max-width: 600px) {
+
+	/*========== LEFT/RIGHT CONTROL ==========*/
+
+	.ken_burns_effect_carousel_control_left,
+	.ken_burns_effect_carousel_control_right {
+
+		border: none;
+
+	}
+
+	/*========== CAPTION ==========*/
+	
+	.ken_burns_effect_carousel_caption {
+
+		left: 0%;
+		width: 100%;
+		bottom: 25%;
+		text-align: center;
+
+	}
+	.ken_burns_effect_carousel_caption h1 {
+		font-size: 35px;
+	}
+	.ken_burns_effect_carousel_caption h2 {
+		font-size: 25px;
+	}
+
+}
+
+
+/*==================================================  MEDIA 601px - 767px  ==================================================*/
+
+
+@media (min-width: 601px) and (max-width: 767px) {
+
+	/*========== CAPTION ==========*/
+	
+	.ken_burns_effect_carousel_caption {
+
+		left: 0%;
+		width: 100%;
+		bottom: 0%;
+		text-align: center;
+
+	}
+	.ken_burns_effect_carousel_caption h1 {
+		font-size: 35px;
+	}
+	.ken_burns_effect_carousel_caption h2 {
+		font-size: 25px;
+	}
+
+}
+
+
+/*==================================================  MEDIA 768px - 991px  ==================================================*/
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	/*========== CAPTION ==========*/
+
+	.ken_burns_effect_carousel_caption {
+
+		bottom: 0%; /*Vanduir*/
+		
+	}
+	.ken_burns_effect_carousel_caption h1 {
+		font-size: 40px;
+	}
+
+}
+
+/*==================================================  MEDIA 768px - 1199px  ==================================================*/
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	/*========== CAPTION ==========*/
+
+	.ken_burns_effect_carousel_caption {
+
+		bottom: 0%; /*Vanduir*/
+
+	}
+
+}
+
+
+/*==========================================================================================================================================
+
+														COLORS (MAROON)
+
+==========================================================================================================================================*/
+
+
+.ken_burns_effect_carousel_wrapper {
+	
+	background: #000000;
+
+}
+
+/*========== LEFT/RIGHT CONTROL ==========*/
+
+.ken_burns_effect_carousel_control_left,
+.ken_burns_effect_carousel_control_left:hover,
+.ken_burns_effect_carousel_control_left:active,
+.ken_burns_effect_carousel_control_left:focus,
+.ken_burns_effect_carousel_control_right,
+.ken_burns_effect_carousel_control_right:hover,
+.ken_burns_effect_carousel_control_right:active,
+.ken_burns_effect_carousel_control_right:focus {
+
+	color: #ffff;
+	border: 2px solid #ffffff;
+	background: transparent; !important;
+
+}
+
+/*=============== CAPTION ===============*/
+
+.ken_burns_effect_carousel_caption h1  {
+
+	
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	background: transparent;
+
+}
+
+.ken_burns_effect_carousel_caption h2  {
+
+	color: #ffffff;
+
+}
+
+/*=============== MEDIA QUERIES ===============*/
+
+@media (max-width: 600px) {
+
+
+	/*========== LEFT/RIGHT CONTROL ==========*/
+
+	.ken_burns_effect_carousel_control_left,
+	.ken_burns_effect_carousel_control_left:hover,
+	.ken_burns_effect_carousel_control_left:active,
+	.ken_burns_effect_carousel_control_left:focus,
+	.ken_burns_effect_carousel_control_right,
+	.ken_burns_effect_carousel_control_right:hover,
+	.ken_burns_effect_carousel_control_right:active,
+	.ken_burns_effect_carousel_control_right:focus {
+
+		border: none !important;
+		background: transparent !important;
+
+	}
+
+}
+
+/*================================================================  END  ================================================================*/
